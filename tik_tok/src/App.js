@@ -1,10 +1,21 @@
 import React from "react";
-import './App.css';
+import Video from "./Video";
+import "./App.css";
 
 function App() {
   return (
     <div className="app">
-      <h1> Full Stack Mern Project</h1>
+      <div className="app__videos">
+        <Video />
+        <Video />
+      </div>
+
+      {/* App container*/}
+      {/* videos */}
+      {/* <Video />*/}
+      {/* <Video />*/}
+      {/* <Video />*/}
+      {/* <Video />*/}
     </div>
   );
 }
