@@ -11,4 +11,4 @@ shares: String
 });
 
 // Collection inside the database
-export default mongoose.model('titokVideos', tiktokSchema)
+export default mongoose.model('titokVideos', tiktokSchema);

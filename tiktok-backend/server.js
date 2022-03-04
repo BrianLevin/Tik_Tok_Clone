@@ -3,19 +3,18 @@ import mongoose from "mongoose";
 import Data from "./data.js";
 import Videos from "./dbModel.js";
 
-
 // app config
 const app = express();
 
-const port = 9000;
+const port = process.env.PORT || 9000;
 
 // middlewares
 app.use(express.json())
 app.use((req,res,next) =>{
 
-    res.setHeaders('Access-Control-Allow-Origin', '*'),
+    res.setHeader('Access-Control-Allow-Origin', '*'),
     
-    res.setHeaders('Access-Control-Allow-Headers', '*')
+    res.setHeader('Access-Control-Allow-Headers', '*')
     next()
 })
 //DB config
